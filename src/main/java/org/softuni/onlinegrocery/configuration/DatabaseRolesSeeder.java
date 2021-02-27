@@ -23,7 +23,7 @@ public class DatabaseRolesSeeder {
     public void seed() {
         if (this.userRoleRepository.count() == 0) {
             Role rootAdmin = new Role();
-            rootAdmin.setAuthority(ROLE_ADMIN);
+            rootAdmin.setAuthority(ROOT_ADMIN);
 
             Role admin = new Role();
             admin.setAuthority(ROLE_ADMIN);
